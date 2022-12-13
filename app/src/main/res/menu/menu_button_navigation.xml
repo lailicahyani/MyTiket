@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemSearch"
+        android:icon="@drawable/ic_search"
+        android:title="@string/str_search" />
+    <item
+        android:id="@+id/itemMyTicket"
+        android:icon="@drawable/ic_outline_article"
+        android:title="@string/str_my_ticket" />
+    <item
+        android:id="@+id/itemNotifications"
+        android:icon="@drawable/ic_outline_notifications"
+        android:title="@string/str_notifications" />
+    <item
+        android:id="@+id/itemProfile"
+        android:icon="@drawable/ic_outline_person"
+        android:title="@string/str_profile" />
+
+</menu>

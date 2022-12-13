@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hactiv8.mytiket">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyTiket"
+        tools:targetApi="31" >
+
+        <activity
+            android:name=".login.AboutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login.SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dataview.TicketDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".payment.CreditCardVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".payment.RetailPaymentVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".payment.BankTransferVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".payment.BankTransferActivity"
+            android:exported="true" />
+        <activity
+            android:name=".payment.PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".payment.DetailPaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dataview.SeatChooserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dataview.BusDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dataview.BusChooserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chooser.DatePickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chooser.DestinationChooserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login.FinishRegistrationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyTiketcom.NoActionBar.FullScreen" />
+        <activity
+            android:name=".login.SetupActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyTiketcom.NoActionBar.FullScreen" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyTiketcom.NoActionBar.FullScreen" />
+        <activity
+            android:name=".login.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyTiketcom.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
