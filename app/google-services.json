@@ -8,7 +8,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:601027717831:android:9c94d12d9cb1a2793cace2",
+        "mobilesdk_app_id": "1:601027717831:android:9e2468531b7005b43cace2",
         "android_client_info": {
           "package_name": "com.hactiv8.mytiket"
         }
@@ -23,19 +23,11 @@
           }
         },
         {
-          "client_id": "601027717831-n6adj149bgg41eg8cv5pkamg4t6hq8lm.apps.googleusercontent.com",
+          "client_id": "601027717831-7goc06e13fpo2gs0ou75bvvjrtvdr60n.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.hactiv8.mytiket",
-            "certificate_hash": "2acb5a7d52762eab87f53a3a5bf98d6d2fdf8077"
-          }
-        },
-        {
-          "client_id": "601027717831-s8r85mn9vn89qj6sbqck3tjdla7fcpst.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.hactiv8.mytiket",
-            "certificate_hash": "8e380a1f9164720e528d866671342e97be670f9c"
+            "certificate_hash": "134a806208a0d38998caed692ee4061fe277218d"
           }
         },
         {

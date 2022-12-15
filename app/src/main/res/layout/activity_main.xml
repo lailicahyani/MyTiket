@@ -17,7 +17,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
-            android:name="com.nuryadincjr.ebusantara.fragment.SearchFragment"
+            android:name="com.hactiv8.mytiket.fragment.SearchFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/bottomNavigationView" />
