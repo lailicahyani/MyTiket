@@ -19,6 +19,22 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.hactiv8.mytiket",
+            "certificate_hash": "ed7ff59678770d1d4997e81020fd38e2bb135e17"
+          }
+        },
+        {
+          "client_id": "601027717831-n6adj149bgg41eg8cv5pkamg4t6hq8lm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hactiv8.mytiket",
+            "certificate_hash": "2acb5a7d52762eab87f53a3a5bf98d6d2fdf8077"
+          }
+        },
+        {
+          "client_id": "601027717831-s8r85mn9vn89qj6sbqck3tjdla7fcpst.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hactiv8.mytiket",
             "certificate_hash": "8e380a1f9164720e528d866671342e97be670f9c"
           }
         },

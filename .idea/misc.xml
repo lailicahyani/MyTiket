@@ -3,9 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/bg_circle.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/bg_rounded.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/bg_rounded_demo.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/bg_rounded_fill.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/bg_track.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_add_comment.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_alfamart.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_arrow_drop_down.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_arrow_drop_down_line.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_article.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_brand_bar_white.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_calendar.xml" value="0.1255" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_google.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_illustration_login.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_illustrator_enjoy.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_person.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_phone.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_round_qr_code.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_success.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/font/lato.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/activity_about.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/fragment_profile.xml" value="0.67" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/item_order.xml" value="0.14074074074074075" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/menu/menu_more_item.xml" value="0.14074074074074075" />
       </map>
