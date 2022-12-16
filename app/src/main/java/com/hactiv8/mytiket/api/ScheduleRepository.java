@@ -63,8 +63,8 @@ public class ScheduleRepository {
 
         collection.orderBy("departureTime")
                 .whereGreaterThanOrEqualTo("departureTime", date)
-                .whereLessThanOrEqualTo("departureTime",date+"~")
-                .whereGreaterThanOrEqualTo("departureTime", formatTime.format(nowDate))
+//                .whereLessThanOrEqualTo("departureTime",date+"~")
+//                .whereGreaterThanOrEqualTo("departureTime", formatTime.format(nowDate))
                 .get().addOnCompleteListener(task -> {
             if(task.isSuccessful() && task.getResult().size()!=0) {
 

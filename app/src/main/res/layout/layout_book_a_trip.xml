@@ -144,23 +144,23 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tvDeparture"
+                            android:id="@+id/tvArrival"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/nunito_extrabold"
                             android:textColor="@color/primary_light"
                             android:textStyle="bold"
                             tools:ignore="TextContrastCheck"
-                            tools:text="MEDAN" />
+                            tools:text="Lumajang" />
 
                         <TextView
-                            android:id="@+id/tvDepartureTime"
+                            android:id="@+id/tvArrivalTime"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/nunito_extrabold"
                             android:textStyle="bold"
-                            tools:text="17:35" />
+                            tools:text="08:35" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -206,7 +206,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tvArrival"
+                            android:id="@+id/tvDeparture"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/nunito_extrabold"
@@ -214,17 +214,17 @@
                             android:textColor="@color/primary_light"
                             android:textStyle="bold"
                             tools:ignore="TextContrastCheck"
-                            tools:text="PEKANBARU" />
+                            tools:text="Jember" />
 
                         <TextView
-                            android:id="@+id/tvArrivalTime"
+                            android:id="@+id/tvDepartureTime"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/nunito_extrabold"
                             android:gravity="end"
                             android:textStyle="bold"
-                            tools:text="09:10" />
+                            tools:text="10:10" />
 
                         <TextView
                             android:layout_width="match_parent"

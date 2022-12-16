@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.hactiv8.mytiket.R;
+
 import com.hactiv8.mytiket.databinding.ItemDestinationBinding;
 import com.hactiv8.mytiket.interfaces.ItemClickListener;
 import com.hactiv8.mytiket.pojo.Buses;
@@ -77,11 +78,11 @@ public class ScheduleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             ReviewersReference reviewers = schedule.getReviewers();
             Cities departureCity = schedule.getDeparture();
             Cities arrivalCity = schedule.getArrival();
-            String piece = "Rp"+buses.getPrice();
+            String price = "Rp"+buses.getPrice();
 
             binding.tvPOName.setText(buses.getPoName());
             binding.tvBusNo.setText(buses.getBusNo());
-            binding.tvPiece.setText(piece);
+            binding.tvPiece.setText(price);
             binding.tvDeparture.setText(toUpperCase(departureCity.getCity()));
             binding.tvArrival.setText(toUpperCase(arrivalCity.getCity()));
             binding.tvTerminalDeparture.setText(toUpperCase(departureCity.getTerminal()));

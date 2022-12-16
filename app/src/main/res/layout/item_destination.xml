@@ -79,12 +79,12 @@
                             tools:text="17:35" />
 
                         <TextView
-                            android:id="@+id/tvTerminalDeparture"
+                            android:id="@+id/tvTerminalArrival"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:fontFamily="@font/lato"
                             android:textSize="12sp"
-                            tools:text="Terminal Amplas" />
+                            tools:text="Terminal Wonorejo" />
 
                     </LinearLayout>
 
@@ -101,12 +101,12 @@
                             android:background="@drawable/bg_track" />
 
                         <TextView
-                            android:id="@+id/tvDeparture"
+                            android:id="@+id/tvArrival"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/lato"
                             android:textSize="12sp"
-                            tools:text="Medan" />
+                            tools:text="Lumajang" />
 
                     </LinearLayout>
 
@@ -132,20 +132,20 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tvTerminalArrival"
+                                android:id="@+id/tvTerminalDeparture"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/lato"
                                 android:textSize="12sp"
-                                tools:text="Terminal Bandaraya" />
+                                tools:text="Terminal Tawangalun" />
 
                             <TextView
-                                android:id="@+id/tvArrival"
-                                android:layout_width="match_parent"
+                                android:id="@+id/tvDeparture"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/lato"
                                 android:paddingTop="5dp"
-                                tools:text="@string/str_riau"
+                                tools:text="Jember"
                                 android:textSize="12sp" />
                         </LinearLayout>
 

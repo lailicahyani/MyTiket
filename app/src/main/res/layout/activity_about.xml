@@ -27,7 +27,7 @@
                 android:fontFamily="@font/poppins_bold"
                 android:text="ABOUT US"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+                android:textColor="@color/primary_light"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:text="Kelompok 6"
-            android:textColor="@color/black"
+            android:textColor="@color/primary_light"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +64,7 @@
             android:layout_marginTop="24dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Hallo, Salam Kenal dari Kami"
-            android:textColor="@color/black"
+            android:textColor="@color/primary_light"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

@@ -100,11 +100,11 @@
     <string name="str_bank_transfer">Bank transfer</string>
     <string name="str_bni_mobile_banking">BNI Mobile banking</string>
     <string name="str_cimb">CIMB Niaga Mobile banking</string>
-    <string name="string_bank_steps">1. Select transfer\n2. In sub menu select virtual account transfer\n3. Type this number in the field</string>
-    <string name="str_bank_steps_second">4. After you press continue, input this number to the transfer amount field.</string>
-    <string name="str_steps_third">5. Dont forget to keep the receipt for verification process.</string>
-    <string name="str_retail_steps">1. Ask the cashier for Online payment\n2. When you asked what Payment, answer E-Busantara.\n3. The cashier will ask what is your booking code. Here is your booking code</string>
-    <string name="str_retail_steps_second">4. You’re gonna be charged as much as the total payment. (as you can see in this header).\n5. Keep the receipt, in case you’re having problem with payment verification.</string>
+    <string name="string_bank_steps">1. Pilih transfer\n2. Pada sub menu pilih transfer virtual account\n3. Ketik kode untuk melanjutkan pembayaran</string>
+    <string name="str_bank_steps_second">4. Setelah Anda menekan lanjutkan, masukkan jumlah ini ke jumlah transfer.</string>
+    <string name="str_steps_third">5. Jangan lupa untuk menyimpan tanda terima untuk proses verifikasi.</string>
+    <string name="str_retail_steps">1. Minta kasir untuk pembayaran Online\n2. Ketika Kasir bertanya apa Pembayaran, jawab MyTiket\n3. Kasir akan menanyakan apa kode booking Anda. Berikut adalah kode pemesanan Anda</string>
+    <string name="str_retail_steps_second">4. Anda akan dikenakan biaya sebanyak total pembayaran. (seperti yang Anda lihat di header ini)\n5. Simpan tanda terima, jika Anda mengalami masalah dengan verifikasi pembayaran.</string>
     <string name="str_sort_by_best_experience">Sort by Best experience</string>
     <string name="str_error">Error</string>
     <string name="str_oops">Oops!</string>
@@ -142,7 +142,6 @@
     <string name="str_tickets">Tickets</string>
     <string name="str_give_your_best_review">Give your best review..</string>
     <string name="str_more">More</string>
-    <string name="str_riau">Riau</string>
     <string name="str_your_tickets">Your Tickets</string>
     <string name="str_logout">Logout</string>
     <string name="str_selected_0_0">Selected: 0/0</string>

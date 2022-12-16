@@ -254,6 +254,7 @@ public class BusChooserActivity extends AppCompatActivity
                 if (data != null && resultCode == RESULT_OK) {
                     departureCity = data.getParcelableExtra("city");
                     binding.tvDeparture.setText(toUpperCase(departureCity.getCity()));
+//                    dep = departureCity.getCity();
                 }
                 break;
             case 2:

@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_extrabold"
         android:textStyle="bold"
-        tools:text="Pekanbaru" />
+        tools:text="Lumajang" />
 
     <TextView
         android:id="@+id/tvTerminal"
@@ -25,6 +25,6 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/lato"
         android:textSize="12sp"
-        tools:text="Terminal Bandaraya" />
+        tools:text="Terminal Wonorejo" />
 
 </LinearLayout>

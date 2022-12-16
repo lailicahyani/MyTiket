@@ -38,7 +38,7 @@
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     tools:ignore="NestedWeights,TextContrastCheck"
-                    tools:text="23 JUL 2019. 17:35" />
+                    tools:text="12 Des 2022. 17:35" />
 
                 <TextView
                     android:id="@+id/tvBookNo"
@@ -116,7 +116,7 @@
                                 android:id="@+id/tvTerminalDeparture"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                tools:text="Terminal Amplas"
+                                tools:text="Terminal Wonorejo"
                                 android:textSize="12sp" />
 
 
@@ -125,7 +125,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="5dp"
-                                tools:text="Medan"
+                                tools:text="Lumajang"
                                 android:textSize="12sp" />
                         </LinearLayout>
 

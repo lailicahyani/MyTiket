@@ -112,7 +112,7 @@
                     android:id="@+id/tvDepartureDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="23 JUL 2019"
+                    tools:text="12 Des 2022"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
