@@ -2,7 +2,7 @@ package com.hactiv8.mytiket.payment;
 
 import static com.hactiv8.mytiket.R.id;
 import static com.hactiv8.mytiket.databinding.ActivityBankTransferBinding.inflate;
-
+import static com.hactiv8.mytiket.R.layout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +19,7 @@ public class BankTransferActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(layout.activity_bank_transfer);
+        setContentView(layout.activity_bank_transfer);
 
         ActivityBankTransferBinding binding = inflate(getLayoutInflater());
         setContentView(binding.getRoot());

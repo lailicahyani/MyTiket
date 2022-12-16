@@ -36,7 +36,7 @@ public class Constant {
     public static final String COLLECTION_CITIES = "cities";
     public static final String TITLE_VIW_ONLY = "View only";
     public static final String COLLECTION_USER = "users";
-//    public static final int RC_SIGN_IN = 0;
+    public static final int RC_SIGN_IN = 0;
 
     public static Bitmap getQrCode(String code){
         BarcodeEncoder barcodeEncoder = new BarcodeEncoder();

@@ -10,7 +10,7 @@ import static com.hactiv8.mytiket.util.Constant.getUsers;
 import static com.hactiv8.mytiket.util.Constant.toUpperCase;
 import static java.lang.String.valueOf;
 import static java.util.Collections.sort;
-
+import static com.hactiv8.mytiket.R.layout.activity_bus_details;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -65,6 +65,7 @@ public class BusDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(activity_bus_details);
         ActivityBusDetailsBinding binding = inflate(getLayoutInflater());
         layoutBookATrip = binding.layoutBookATrip;
         setContentView(binding.getRoot());

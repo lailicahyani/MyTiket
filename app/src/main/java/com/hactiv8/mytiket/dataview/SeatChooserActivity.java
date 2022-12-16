@@ -3,6 +3,7 @@ package com.hactiv8.mytiket.dataview;
 import static com.google.android.material.snackbar.Snackbar.LENGTH_SHORT;
 import static com.google.android.material.snackbar.Snackbar.make;
 import static com.hactiv8.mytiket.R.id;
+import static com.hactiv8.mytiket.R.layout;
 import static java.lang.Integer.parseInt;
 
 import android.annotation.SuppressLint;
@@ -46,6 +47,7 @@ public class SeatChooserActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(layout.activity_seat_chooser);
         binding = ActivitySeatChooserBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

@@ -2,6 +2,7 @@ package com.hactiv8.mytiket.dataview;
 
 import static com.hactiv8.mytiket.R.id.ivQrCode;
 import static com.hactiv8.mytiket.R.id.tvTitle;
+import static com.hactiv8.mytiket.R.layout.activity_ticket_details;
 import static com.hactiv8.mytiket.R.layout.layout_qrcode;
 import static com.hactiv8.mytiket.util.Constant.getEstimatedTimes;
 import static com.hactiv8.mytiket.util.Constant.getQrCode;
@@ -35,7 +36,7 @@ public class TicketDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(activity_ticket_details);
+        setContentView(activity_ticket_details);
 
         binding = ActivityTicketDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

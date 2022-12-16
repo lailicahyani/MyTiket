@@ -118,6 +118,7 @@ public class ScheduleReference implements Parcelable {
     }
 
     public void setReviewers(ReviewersReference reviewers) {
+
         this.reviewers = reviewers;
     }
 }

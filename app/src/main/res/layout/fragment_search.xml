@@ -15,10 +15,11 @@
             android:id="@+id/ivSearching"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/str_todo_image_illustrator"
             android:paddingTop="?attr/actionBarSize"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_illustration_search"
-            android:contentDescription="@string/str_todo_image_illustrator" />
+            android:src="@drawable/ic_illustration_search" />
 
     </RelativeLayout>
 
@@ -28,20 +29,6 @@
         android:layout_height="wrap_content"
         app:elevation="0dp"
         android:background="@android:color/transparent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
-
-            <ImageView
-                android:id="@+id/ivBrand"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_brand"
-                android:contentDescription="@string/app_name" />
-
-        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -64,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="200dp"
+                    android:layout_marginTop="300dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
                     android:elevation="8dp"
@@ -106,7 +93,7 @@
                                     android:layout_height="wrap_content"
                                     android:contentDescription="@string/str_arrival_locations"
                                     android:src="@drawable/ic_location"
-                                    app:tint="@color/red_selector"/>
+                                    app:tint="@color/red_selector" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -188,8 +175,8 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginEnd="@dimen/p10"
                                 android:layout_gravity="bottom"
+                                android:layout_marginEnd="@dimen/p10"
                                 android:contentDescription="@string/str_passenger"
                                 android:src="@drawable/ic_round_group" />
 
@@ -198,8 +185,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:orientation="vertical"
                                 android:background="?selectableItemBackground"
+                                android:orientation="vertical"
                                 tools:ignore="NestedWeights">
 
                                 <TextView
@@ -227,8 +214,8 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginEnd="@dimen/p10"
                                 android:layout_gravity="bottom"
+                                android:layout_marginEnd="@dimen/p10"
                                 android:contentDescription="@string/str_arrival"
                                 android:src="@drawable/ic_calendar" />
 

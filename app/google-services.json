@@ -23,14 +23,6 @@
           }
         },
         {
-          "client_id": "601027717831-7goc06e13fpo2gs0ou75bvvjrtvdr60n.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.hactiv8.mytiket",
-            "certificate_hash": "134a806208a0d38998caed692ee4061fe277218d"
-          }
-        },
-        {
           "client_id": "601027717831-on12ih5m3ijlch1r37g2t2vqju251m5q.apps.googleusercontent.com",
           "client_type": 3
         }

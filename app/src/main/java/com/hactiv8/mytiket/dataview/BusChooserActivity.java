@@ -157,40 +157,39 @@ public class BusChooserActivity extends AppCompatActivity
     private void onSetData(ArrayList<ScheduleReference> schedules) {
 
         if (schedules == null) schedules = new ArrayList<>();
-            boolean isLowestPiece = binding.tvFilters.getSelectedItem().toString().equals("Lowest price");
-            boolean isHighestPiece = binding.tvFilters.getSelectedItem().toString().equals("Highest price");
-            boolean isEstimation = binding.tvFilters.getSelectedItem().toString().equals("Estimate time");
+        boolean isLowestPiece = binding.tvFilters.getSelectedItem().toString().equals("Lowest price");
+        boolean isHighestPiece = binding.tvFilters.getSelectedItem().toString().equals("Highest price");
+        boolean isEstimation = binding.tvFilters.getSelectedItem().toString().equals("Estimate time");
 
-            if (isLowestPiece) {
-                sort(schedules, comparingDouble(o -> parseDouble(o.getBuses().getPrice())));
-            } else if (isHighestPiece) {
-                sort(schedules, (o1, o2) ->
-                        compare(parseDouble(o2.getBuses().getPrice()),
-                                parseDouble(o1.getBuses().getPrice())));
-            } else if (isEstimation) {
-                sort(schedules, comparingDouble(Constant::getIntEstimatedTimes));
-            } else {
-                sort(schedules, (o1, o2) ->
-                        o2.getReviewers().getRatingsCount()
-                                .compareTo(o1.getReviewers().getRatingsCount()));
-            }
+        if (isLowestPiece) {
+            sort(schedules, comparingDouble(o -> parseDouble(o.getBuses().getPrice())));
+        } else if (isHighestPiece) {
+            sort(schedules, (o1, o2) ->
+                    compare(parseDouble(o2.getBuses().getPrice()),
+                            parseDouble(o1.getBuses().getPrice())));
+        } else if (isEstimation) {
+            sort(schedules, comparingDouble(Constant::getIntEstimatedTimes));
+        } else {
+            sort(schedules, (o1, o2) ->
+                    o2.getReviewers().getRatingsCount()
+                            .compareTo(o1.getReviewers().getRatingsCount()));
+        }
 
-            String seat = binding.tvSeats.getText().toString().replace("Seat ", "");
-            ScheduleAdapter scheduleAdapter = new ScheduleAdapter(schedules, parseInt(seat));
-            binding.rvBuses.setLayoutManager(new LinearLayoutManager(this));
-            binding.rvBuses.setAdapter(scheduleAdapter);
-            onListener(scheduleAdapter, schedules);
+        String seat = binding.tvSeats.getText().toString().replace("Seat ", "");
+        ScheduleAdapter scheduleAdapter = new ScheduleAdapter(schedules, parseInt(seat));
+        binding.rvBuses.setLayoutManager(new LinearLayoutManager(this));
+        binding.rvBuses.setAdapter(scheduleAdapter);
+        onListener(scheduleAdapter, schedules);
 
-            if(scheduleAdapter.getItemCount()==0){
-//                binding
-                binding.rvBuses.setVisibility(GONE);
-                binding.layoutError.textView.setText("Sorry!");
-                binding.layoutError.tvMassage.setText("The destination location you selected was not found");
-                binding.layoutError.linearLayout.setVisibility(VISIBLE);
-            }else {
-                binding.layoutError.linearLayout.setVisibility(GONE);
-                binding.rvBuses.setVisibility(VISIBLE);
-            }
+        if(scheduleAdapter.getItemCount()==0){
+            binding.rvBuses.setVisibility(GONE);
+            binding.layoutError.textView.setText("Sorry!");
+            binding.layoutError.tvMassage.setText("The destination location you selected was not found");
+            binding.layoutError.linearLayout.setVisibility(VISIBLE);
+        }else {
+            binding.layoutError.linearLayout.setVisibility(GONE);
+            binding.rvBuses.setVisibility(VISIBLE);
+        }
     }
 
     private void onListener(ScheduleAdapter scheduleAdapter, ArrayList<ScheduleReference> schedules) {

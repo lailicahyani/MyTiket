@@ -24,12 +24,18 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/drawable/ic_success.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/font/lato.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/activity_about.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/activity_bus_chooser.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/activity_bus_details.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/activity_main.xml" value="0.20102564102564102" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/fragment_profile.xml" value="0.67" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/fragment_search.xml" value="0.2" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/fragment_tickets.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/item_destination.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/item_order.xml" value="0.14074074074074075" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/layout_error.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/layout/layout_sliding_up_panel.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyTiket/app/src/main/res/menu/menu_more_item.xml" value="0.14074074074074075" />
       </map>
     </option>

@@ -4,6 +4,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 import static com.google.android.gms.auth.api.signin.GoogleSignInOptions.Builder;
 import static com.google.android.gms.auth.api.signin.GoogleSignInOptions.DEFAULT_SIGN_IN;
 import static com.hactiv8.mytiket.databinding.ActivityLoginBinding.inflate;
+import static com.hactiv8.mytiket.util.Constant.RC_SIGN_IN;
 import static com.hactiv8.mytiket.util.LocalPreference.getInstance;
 import static java.lang.String.valueOf;
 
@@ -41,160 +42,11 @@ public class LoginActivity extends AppCompatActivity {
     private ActivityLoginBinding binding;
     private GoogleSignInClient signInClient;
     private FirebaseAuth auth;
-//    private FirebaseFirestore db;
     private ProgressDialog dialog;
-//    private boolean isExist = false;
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_login);
-//
-//        binding = inflate(getLayoutInflater());
-//        setContentView(binding.getRoot());
-//
-////        dialog = new ProgressDialog(this);
-////        dialog.setMessage("Setup..");
-////        dialog.setCancelable(false);
-//
-//        createRequest();
-//
-//
-//        auth = FirebaseAuth.getInstance();
-//        db = FirebaseFirestore.getInstance();
-//        binding.btnSignUp.setOnClickListener(v -> signIn());
-//    }
-//    private void createRequest() {
-//        // R.string.default_web_client_id : get client id apter build
-//        GoogleSignInOptions gso = new Builder(DEFAULT_SIGN_IN)
-//                .requestIdToken(getString(R.string.default_web_client_id))
-//                .requestEmail()
-//                .build();
-//
-//        signInClient = GoogleSignIn.getClient(this, gso);
-//    }
-//
-//    private void signIn() {
-//        Intent signInIntent = signInClient.getSignInIntent();
-//        startActivityForResult(signInIntent, 100);
-//    }
-//
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//
-//        FirebaseUser user = auth.getCurrentUser();
-//        if (user !=null){
-//            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-//            startActivity(intent);
-//        }
-//    }
-//
-////    @Override
-////    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-////        super.onActivityResult(requestCode, resultCode, data);
-////        if (requestCode == 100) {
-////            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-////            handleSignInResult(task);
-////        }
-////    }
-////
-////    private void handleSignInResult(Task<GoogleSignInAccount> task) {
-////        try {
-////            dialog.show();
-////            GoogleSignInAccount account = task.getResult(ApiException.class);
-////            Log.d(TAG, "firebaseAuthWithGoogle:" + account.getId());
-////            firebaseAuthWithGoogle(account.getIdToken());
-////
-////        } catch (ApiException e) {
-////            dialog.dismiss();
-////            signInClient.signOut();;
-////            Log.d(TAG, "Google sign in failed", e);
-////            Snackbar.make(binding.getRoot(), "signInResult:failed code=" + e.getStatusCode(),
-////                    Snackbar.LENGTH_SHORT).show();
-////        }
-////    }
-//
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if (requestCode == 1000) {
-//            progressBar(true);
-//            Task<GoogleSignInAccount> signInAccountTask = GoogleSignIn.getSignedInAccountFromIntent(data);
-//            if (signInAccountTask.isSuccessful()) {
-//                try {
-//                    GoogleSignInAccount googleSignInAccount = signInAccountTask.getResult(ApiException.class);
-//                    AuthCredential authCredential = GoogleAuthProvider.getCredential(googleSignInAccount.getIdToken(), null);
-//                    auth.signInWithCredential(authCredential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<AuthResult> task) {
-//                            if (task.isSuccessful()) {
-//                                progressBar(false);
-//                                boolean userExist = checkUser(task.getResult().getUser().getEmail());
-//                                if (userExist) {
-//                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-//                                    startActivity(intent);
-//                                } else {
-//                                    updateUi();
-//                                }
-//
-//                            } else {
-//                                progressBar(false);
-//                                Toast.makeText(LoginActivity.this, "Authentication Failed : " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-//                            }
-//                        }
-//                    });
-//                } catch (ApiException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
-//    }
-//
-//
-////    private void firebaseAuthWithGoogle(String idToken) {
-////        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
-////        auth.signInWithCredential(credential)
-////                .addOnCompleteListener(this, task -> {
-////                    if (task.isSuccessful()) {
-////                        FirebaseUser user = auth.getCurrentUser();
-////                        updateUI(user);
-////                        signInClient.signOut();
-////                    } else {
-////                        dialog.dismiss();
-////                        signInClient.signOut();
-////                        Snackbar.make(binding.getRoot(), "Authentication Failed.",
-////                                Snackbar.LENGTH_SHORT).show();
-////                    }
-////                });
-////    }
-//
-//    private void updateUi() {
-//        startActivity(new Intent(this, SetupActivity.class));
-//        }
-//
-//    private void progressBar(boolean state) {
-//        if (state) {
-//            binding.progressBar.setVisibility(View.VISIBLE);
-//        } else {
-//            binding.progressBar.setVisibility(View.GONE);
-//        }
-//    }
-//
-//    private boolean checkUser(String email) {
-//
-//        db.collection("user")
-//                .whereEqualTo("email", email)
-//                .get().addOnCompleteListener(task -> {
-//                    if (task.isSuccessful()) {
-//                        isExist = task.getResult().size() >= 1;
-//                    }
-//                });
-//
-//        return isExist;
-//    }
-@Override
-protected void onCreate(Bundle savedInstanceState) {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_login);
 
@@ -218,24 +70,14 @@ protected void onCreate(Bundle savedInstanceState) {
 
     private void signIn() {
         Intent signInIntent = signInClient.getSignInIntent();
-        startActivityForResult(signInIntent, 100);
+        startActivityForResult(signInIntent, RC_SIGN_IN);
     }
 
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//
-////        FirebaseUser user = auth.getCurrentUser();
-////        if (user !=null){
-////            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-////            startActivity(intent);
-////        }
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 100) {
+        if (requestCode == RC_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
         }
