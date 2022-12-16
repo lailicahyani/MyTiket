@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".fragment.ProfileFragment">
 
+
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_height="wrap_content"
@@ -16,14 +18,16 @@
         <androidx.appcompat.widget.Toolbar
              app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
             android:id="@+id/toolbar"
+            android:layout_marginTop="30dp"
             android:layout_height="?attr/actionBarSize"
             android:layout_width="match_parent">
 
             <ImageView
                 android:id="@+id/ivBrand"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/app_name"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_brand"
                 tools:ignore="ImageContrastCheck" />
 
