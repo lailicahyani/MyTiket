@@ -69,14 +69,14 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/tvDepartureTime"
+                            android:id="@+id/tvArrivalTime"
                             android:layout_width="60dp"
                             android:layout_height="match_parent"
                             android:fontFamily="@font/nunito_extrabold"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            tools:text="17:35" />
+                            tools:text="08:35" />
 
                         <TextView
                             android:id="@+id/tvTerminalArrival"
@@ -117,7 +117,7 @@
                         android:padding="2dp">
 
                         <TextView
-                            android:id="@+id/tvArrivalTime"
+                            android:id="@+id/tvDepartureTime"
                             android:layout_width="60dp"
                             android:layout_height="match_parent"
                             android:fontFamily="@font/nunito_extrabold"

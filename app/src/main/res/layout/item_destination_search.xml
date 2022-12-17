@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_extrabold"
         android:textStyle="bold"
+        android:textColor="@color/primary_light"
         tools:text="Lumajang" />
 
     <TextView
@@ -25,6 +26,7 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/lato"
         android:textSize="12sp"
+        android:textColor="@color/primary_light"
         tools:text="Terminal Wonorejo" />
 
 </LinearLayout>

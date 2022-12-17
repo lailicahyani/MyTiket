@@ -305,14 +305,17 @@ public class BusDetailsActivity extends AppCompatActivity {
                 case "Toilet":
                     layoutBookATrip.tvToiletFacility.setVisibility(VISIBLE);
                     break;
-                case "Rest stop":
+                case "Makan":
                     layoutBookATrip.tvRestFacility.setVisibility(VISIBLE);
                     break;
-                case "Luggage":
+                case "Bagasi":
                     layoutBookATrip.tvLuggageFacility.setVisibility(VISIBLE);
                     break;
                 case "AC":
                     layoutBookATrip.tvACFacility.setVisibility(VISIBLE);
+                    break;
+                case "DVD":
+                    layoutBookATrip.tvDVDFacility.setVisibility(VISIBLE);
                     break;
             }
         }

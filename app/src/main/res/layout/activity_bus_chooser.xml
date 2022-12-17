@@ -211,12 +211,12 @@
                 <com.cooltechworks.views.shimmer.ShimmerRecyclerView
                     android:id="@+id/rvBuses"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="514dp"
+                    app:shimmer_demo_angle="20"
                     app:shimmer_demo_child_count="2"
                     app:shimmer_demo_grid_child_count="1"
                     app:shimmer_demo_layout="@layout/layout_demo_grid"
                     app:shimmer_demo_layout_manager_type="linear_vertical"
-                    app:shimmer_demo_angle="20"
                     tools:listitem="@layout/item_destination" />
             </LinearLayout>
 
