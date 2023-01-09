@@ -1,9 +1,9 @@
 {
-  "project_info": {
-    "project_number": "601027717831",
-    "firebase_url": "https://mytiketcom-e06f9-default-rtdb.firebaseio.com",
-    "project_id": "mytiketcom-e06f9",
-    "storage_bucket": "mytiketcom-e06f9.appspot.com"
+  //"project_info": {
+  //  "project_number": "601027717831",
+  //  "firebase_url": "https://mytiketcom-e06f9-default-rtdb.firebaseio.com",
+  //  "project_id": "mytiketcom-e06f9",
+  //  "storage_bucket": "mytiketcom-e06f9.appspot.com"
   },
   "client": [
     {
